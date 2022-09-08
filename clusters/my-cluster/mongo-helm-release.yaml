@@ -14,7 +14,7 @@ spec:
       chart: mongo
       version: 13.1.2
       sourceRef:
-        kind: HelmRepository
+        kind: GitRepository
         name: mongo 
         namespace: default
   values:

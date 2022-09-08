@@ -1,4 +1,4 @@
-apiVersion: helm.fluxcd.io/v1
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: mongodb
@@ -11,11 +11,11 @@ spec:
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: mongodb
-    version: 7.6.3
+    version: 13.1.2
   values:
     image:
       repository: bitnami/mongodb
-      tag: 4.0.13
+      tag: 5.0.12
     usePassword: false
     persistence:
       enabled: false

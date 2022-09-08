@@ -5,6 +5,6 @@ metadata:
   namespace: default 
 spec:
   interval: 1m
-  url: https://github.com/bitnami/charts/bitname/mongodb
+  url: https://github.com/bitnami/charts/tree/master/bitnami/mongodb
   ref:
     branch: master

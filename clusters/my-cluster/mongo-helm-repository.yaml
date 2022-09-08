@@ -4,8 +4,7 @@ metadata:
   name: mongo
   namespace: default
 spec:
-  interval: 5m0s
-  url: kubernetes-charts.storage.googleapis.com/bitnami/mongodb
-  type: "oci"
+  interval: 1m0s
+  url: https://kubernetes-charts.storage.googleapis.com/bitnami/mongodb
   # secretRef:
   #   name: regcred

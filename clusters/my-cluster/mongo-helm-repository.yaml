@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   interval: 5m0s
-  url: https://kubernetes-charts.storage.googleapis.com/bitnami/mongodb
+  url: kubernetes-charts.storage.googleapis.com/bitnami/mongodb
   type: "oci"
   # secretRef:
   #   name: regcred

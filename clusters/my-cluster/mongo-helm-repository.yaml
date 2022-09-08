@@ -5,6 +5,6 @@ metadata:
   namespace: default
 spec:
   interval: 1m0s
-  url: https://kubernetes-charts.storage.googleapis.com/bitnami/mongodb
-  # secretRef:
-  #   name: regcred
+  url: https://kubernetes-charts.storage.googleapis.com/mongodb
+  secretRef:
+    name: regcred

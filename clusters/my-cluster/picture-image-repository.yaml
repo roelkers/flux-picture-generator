@@ -2,7 +2,7 @@ apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageRepository
 metadata:
   name: picture 
-  namespace: flux-system
+  namespace: default
 spec:
   image: gcr.io/picture-generator/picture-service:latest 
   interval: 1m0s

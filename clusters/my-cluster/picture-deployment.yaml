@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: picture
+  labels:
+    app: picture
+spec:
+  selector:
+    matchLabels:
+      app: picture
+  template:
+    metadata:
+      labels:
+        app: picture
+    spec:
+      containers:
+      - name: picture 
+        image: gcr.io/picture-generator/picture-service:latest 
+        env:
+          - name: DB_URL
+          - value: mongodb://mongodb-picture:27017/pictures
+          #- value: mongodb://myorg:myorgpw@mongodb-picture:27017/pictures
+        # volumeMounts:
+        # - name: config
+        #   mountPath: /config
+      # volumes:
+      # - name: config
+        # configMap:
+        #   name: example-configmap-1

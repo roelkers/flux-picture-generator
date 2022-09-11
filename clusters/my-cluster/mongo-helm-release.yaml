@@ -12,7 +12,6 @@ spec:
   chart: 
     spec: 
       chart: ./bitnami/mongodb
-      #version: 13.1.2
       sourceRef:
         kind: GitRepository
         name: bitnami 

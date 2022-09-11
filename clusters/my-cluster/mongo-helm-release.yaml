@@ -15,7 +15,7 @@ spec:
       #version: 13.1.2
       sourceRef:
         kind: GitRepository
-        name: mongodb 
+        name: bitnami 
   values:
     # image:
     #   repository: bitnami/mongodb

@@ -3,11 +3,11 @@ kind: HelmRelease
 metadata:
   name: mongodb
   namespace: default 
-  annotations:
-    fluxcd.io/automated: "false"
-    fluxcd.io/tag.chart-image: semver:~4.0
+  # annotations:
+  #   fluxcd.io/automated: "false"
+  #   fluxcd.io/tag.chart-image: semver:~4.0
 spec:
-  releaseName: mongodb
+  releaseName: mongodb-picture
   interval: 1m
   chart: 
     spec: 

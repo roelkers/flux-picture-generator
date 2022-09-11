@@ -11,12 +11,11 @@ spec:
   interval: 1m
   chart: 
     spec: 
-      chart: mongodb
-      version: 13.1.2
+      chart: ./bitnami/mongodb
+      #version: 13.1.2
       sourceRef:
         kind: GitRepository
         name: mongodb 
-        namespace: default
   values:
     # image:
     #   repository: bitnami/mongodb

@@ -20,6 +20,8 @@ spec:
         env:
           - name: DB_URL
             value: mongodb://mongodb-picture:27017/pictures
+          - name: PROJECT_ID
+            value: picture-generator
           #- value: mongodb://myorg:myorgpw@mongodb-picture:27017/pictures
         # volumeMounts:
         # - name: config

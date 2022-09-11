@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: picture
+  namespace: default
   labels:
     app: picture
 spec:

@@ -3,4 +3,5 @@ kind: Kustomization
 resources:
   - picture-deployment.yaml
   - picture-registry.yaml
+  - picture-policy.yaml
     #  - picture-service.yaml

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: picture
-        image: gcr.io/picture-generator/picture-service:1.0.2 # {"$imagepolicy": "flux-system:picture"}
+        image: gcr.io/picture-generator/picture-service:1.0.4 # {"$imagepolicy": "flux-system:picture"}
         env:
         - name: DB_URL
           value: mongodb://mongodb-picture:27017/pictures

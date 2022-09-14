@@ -5,4 +5,4 @@ metadata:
   namespace: flux-system
 spec:
   image: gcr.io/picture-generator/picture-service
-  interval: 1m0s
+  interval: 30s

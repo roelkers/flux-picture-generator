@@ -15,18 +15,18 @@ spec:
         app: picture
     spec:
       containers:
-      - name: picture 
-        image: gcr.io/picture-generator/picture-service:latest # {"$imagepolicy": "flux-system:picture"}
+      - name: picture
+        image: gcr.io/picture-generator/picture-service:1.0.0 # {"$imagepolicy": "flux-system:picture"}
         env:
-          - name: DB_URL
-            value: mongodb://mongodb-picture:27017/pictures
-          - name: PROJECT_ID
-            value: picture-generator
+        - name: DB_URL
+          value: mongodb://mongodb-picture:27017/pictures
+        - name: PROJECT_ID
+          value: picture-generator
           #- value: mongodb://myorg:myorgpw@mongodb-picture:27017/pictures
         # volumeMounts:
         # - name: config
         #   mountPath: /config
       # volumes:
       # - name: config
-        # configMap:
-        #   name: example-configmap-1
+# configMap:
+#   name: example-configmap-1

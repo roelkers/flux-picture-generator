@@ -24,7 +24,7 @@ spec:
       passwords: 
         - picturepw
       databases:
-        - picture
+        - pictures
     persistence:
       enabled: false
     securityContext:

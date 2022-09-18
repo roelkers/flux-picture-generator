@@ -3,9 +3,6 @@ kind: HelmRelease
 metadata:
   name: mongodb-picture
   namespace: default 
-  # annotations:
-  #   fluxcd.io/automated: "false"
-  #   fluxcd.io/tag.chart-image: semver:~4.0
 spec:
   releaseName: mongodb-picture
   interval: 1m
@@ -16,17 +13,16 @@ spec:
         kind: GitRepository
         name: bitnami 
   values:
-    usePassword: false
     auth:
       enabled: true
       rootPassword: "root"
       rootUser: "root"
-      usernames: 
-        - picture
-      passwords: 
-        - picturepw
-      databases:
-        - pictures
+      # usernames: 
+      #   - picture
+      # passwords: 
+      #   - picturepw
+      # databases:
+      #   - pictures
     persistence:
       enabled: false
     securityContext:

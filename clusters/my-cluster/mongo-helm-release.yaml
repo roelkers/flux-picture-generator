@@ -17,14 +17,14 @@ spec:
       enabled: true
       rootPassword: "root"
       rootUser: "root"
-      # usernames: 
-      #   - picture
-      # passwords: 
-      #   - picturepw
-      # databases:
-      #   - pictures
+      usernames: 
+        - picture
+      passwords: 
+        - picturepw
+      databases:
+        - pictures
     persistence:
-      enabled: false
+      enabled: true
     securityContext:
       enabled: true
       fsGroup: 0

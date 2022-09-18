@@ -25,11 +25,3 @@ spec:
       serviceAccountName: k8s-pubsub 
       nodeSelector:
         iam.gke.io/gke-metadata-server-enabled: "true"
-          #- value: mongodb://myorg:myorgpw@mongodb-picture:27017/pictures
-        # volumeMounts:
-        # - name: config
-        #   mountPath: /config
-      # volumes:
-      # - name: config
-# configMap:
-#   name: example-configmap-1

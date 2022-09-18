@@ -19,7 +19,7 @@ spec:
         image: gcr.io/picture-generator/picture-service:1.0.4 # {"$imagepolicy": "flux-system:picture"}
         env:
         - name: DB_URL
-          value: mongodb://mongodb-picture:27017/pictures
+          value: mongodb://picture:picturepw@mongodb-picture:27017/pictures
         - name: PROJECT_ID
           value: picture-generator
       serviceAccountName: k8s-pubsub 

@@ -16,10 +16,15 @@ spec:
         kind: GitRepository
         name: bitnami 
   values:
-    # image:
-    #   repository: bitnami/mongodb
-    #   tag: 5.0.12
     usePassword: false
+    auth:
+      enabled: true
+      usernames: 
+        - picture
+      passwords: 
+        - picturepw
+      databases:
+        - picture
     persistence:
       enabled: false
     securityContext:

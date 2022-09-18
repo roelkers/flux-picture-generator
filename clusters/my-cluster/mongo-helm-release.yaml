@@ -19,6 +19,8 @@ spec:
     usePassword: false
     auth:
       enabled: true
+      rootPassword: "root"
+      rootUser: "root"
       usernames: 
         - picture
       passwords: 

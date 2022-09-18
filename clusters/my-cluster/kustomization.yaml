@@ -7,4 +7,5 @@ resources:
   - picture-registry.yaml
   - picture-policy.yaml
   - image-automation.yaml
+  - wrk-test.yaml
     #  - picture-service.yaml

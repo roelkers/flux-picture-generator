@@ -8,4 +8,4 @@ resources:
   - picture-registry.yaml
   - picture-policy.yaml
   - image-automation.yaml
-  - picture-service 
+  - picture-service.yaml 

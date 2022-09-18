@@ -6,5 +6,9 @@ resources:
   - picture-deployment.yaml
   - picture-registry.yaml
   - picture-policy.yaml
-  - image-automation.yaml
   - picture-service.yaml 
+  - mouse-events-deployment.yaml
+  - mouse-events-registry.yaml
+  - mouse-events-policy.yaml
+  - mouse-events-service.yaml 
+  - image-automation.yaml

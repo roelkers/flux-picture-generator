@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mouse-event
+  namespace: default
+  labels:
+    app: mouse-events
+spec:
+  selector:
+    matchLabels:
+      app: mouse-events
+  template:
+    metadata:
+      labels:
+        app: mouse-events
+    spec:
+      containers:
+      - name: mouse-events
+        image: gcr.io/picture-generator/mouse-events:1.0.4 # {"$imagepolicy": "flux-system:mouse-events"}
+        env:
+        - name: PROJECT_ID
+          value: picture-generator
+      serviceAccountName: k8s-pubsub 
+      nodeSelector:
+        iam.gke.io/gke-metadata-server-enabled: "true"

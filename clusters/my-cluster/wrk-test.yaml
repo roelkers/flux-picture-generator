@@ -1,21 +1,13 @@
 apiVersion: apps/v1
-kind: deployment 
+kind: Pod
 metadata:
   name: workload-identity-test
   namespace: default
 spec:
-  selector:
-    matchLabels:
-      app: wrk-test
-  template:
-    metadata:
-      labels:
-        app: wrk-test
-    spec:
-      containers:
-      - image: google/cloud-sdk:slim
-        name: workload-identity-test
-        command: ["sleep","infinity"]
-      serviceAccountName: k8s-pubsub 
-      nodeSelector:
-        iam.gke.io/gke-metadata-server-enabled: "true"
+  containers:
+  - image: google/cloud-sdk:slim
+    name: workload-identity-test
+    command: ["sleep","infinity"]
+  serviceAccountName: k8s-pubsub 
+  nodeSelector:
+    iam.gke.io/gke-metadata-server-enabled: "true"

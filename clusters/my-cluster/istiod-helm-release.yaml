@@ -8,7 +8,7 @@ spec:
   interval: 1m
   chart: 
     spec: 
-      chart: ./manifests/charts/default
+      chart: ./manifests/charts/istio-control/istio-discovery
       sourceRef:
         kind: GitRepository
         name: istio

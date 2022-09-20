@@ -7,6 +7,7 @@ resources:
   - picture-registry.yaml
   - picture-policy.yaml
   - picture-service.yaml 
+  - picture-route.yaml 
   - mouse-events-deployment.yaml
   - mouse-events-registry.yaml
   - mouse-events-policy.yaml
@@ -16,3 +17,4 @@ resources:
   - istio-base-helm-release.yaml
   - istiod-helm-release.yaml
   - istio-ingressgateway-helm-release.yaml
+  - istio-gateway.yaml

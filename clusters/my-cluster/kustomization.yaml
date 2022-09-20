@@ -12,3 +12,5 @@ resources:
   - mouse-events-policy.yaml
   - mouse-events-service.yaml 
   - image-automation.yaml
+  - istio-base-helm-release.yaml
+  - istio-git-repository.yaml

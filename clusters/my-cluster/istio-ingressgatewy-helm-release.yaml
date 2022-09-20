@@ -1,0 +1,14 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: istio-ingressgatewy
+  namespace: istio-ingress
+spec:
+  releaseName: istio-ingressgatewy
+  interval: 1m
+  chart: 
+    spec: 
+      chart: ./manifests/charts/gateway
+      sourceRef:
+        kind: GitRepository
+        name: istio

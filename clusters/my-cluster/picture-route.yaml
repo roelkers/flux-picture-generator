@@ -9,11 +9,11 @@ spec:
   gateways:
   - picture-gateway
   http:
-  # - match:
-  #   - uri:
-  #       prefix: /api/pictures
+  - match:
+    - uri:
+        prefix: /api/pictures
   - route:
     - destination:
         port:
           number: 3334
-        host: picture
+        host: picture.default.svc.cluster.local

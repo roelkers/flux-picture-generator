@@ -9,10 +9,10 @@ spec:
   gateways:
   - picture-gateway
   http:
-  - match:
-    - uri:
-        prefix: /api/pictures
-    route:
+  # - match:
+  #   - uri:
+  #       prefix: /api/pictures
+  - route:
     - destination:
         port:
           number: 3334

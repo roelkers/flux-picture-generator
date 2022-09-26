@@ -15,3 +15,7 @@ resources:
   - image-automation.yaml
   - ./istio
   - ./istio-ingress
+  - httpbin-service.yaml
+  - httpbin-deployment.yaml
+    #- httpbin-gateway.yaml
+

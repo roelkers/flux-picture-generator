@@ -16,4 +16,4 @@ spec:
     - destination:
         port:
           number: 3334
-        host: picture.default.svc.cluster.local
+        host: picture

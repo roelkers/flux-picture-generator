@@ -22,6 +22,8 @@ spec:
           value: mongodb://picture:picturepw@mongodb-picture:27017/pictures
         - name: PROJECT_ID
           value: picture-generator
+        ports:
+        - containerPort: 80
       serviceAccountName: k8s-pubsub 
       nodeSelector:
         iam.gke.io/gke-metadata-server-enabled: "true"

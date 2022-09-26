@@ -3,8 +3,13 @@ kind: Service
 metadata:
   name: picture
   namespace: default
+  labels:
+    app: picture
+    service: picture
 spec:
-  type: ClusterIP
   ports:
-    - targetPort: 3334 
-      port: 3334
+  - name: http
+    targetPort: 3334 
+    port: 3334
+  selector:
+    app: httpbin

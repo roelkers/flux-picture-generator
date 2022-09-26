@@ -23,7 +23,7 @@ spec:
         - name: PROJECT_ID
           value: picture-generator
         ports:
-        - containerPort: 80
+        - containerPort: 3334 
       serviceAccountName: k8s-pubsub 
       nodeSelector:
         iam.gke.io/gke-metadata-server-enabled: "true"

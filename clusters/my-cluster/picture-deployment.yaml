@@ -15,7 +15,6 @@ spec:
         app: picture
     spec:
       containers:
-      - containerPort: 3334
       - name: picture
         image: gcr.io/picture-generator/picture-service:1.0.5 # {"$imagepolicy": "flux-system:picture"}
         env:
@@ -23,6 +22,8 @@ spec:
           value: mongodb://picture:picturepw@mongodb-picture:27017/pictures
         - name: PROJECT_ID
           value: picture-generator
+        ports:
+        - containerPort: 3334
       serviceAccountName: k8s-pubsub
       nodeSelector:
         iam.gke.io/gke-metadata-server-enabled: "true"

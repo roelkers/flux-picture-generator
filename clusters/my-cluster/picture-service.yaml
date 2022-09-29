@@ -11,5 +11,6 @@ spec:
   - name: http
     targetPort: 3334 
     port: 3334
+    appProtocol: http
   selector:
-    app: httpbin
+    app: picture

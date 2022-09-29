@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   hosts:
-  - "*"
+  - "picture.de"
   gateways:
   - istio-ingress/picture-gateway
   http:

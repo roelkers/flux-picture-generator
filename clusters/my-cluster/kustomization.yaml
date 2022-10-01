@@ -4,6 +4,8 @@ resources:
   - bitnami-git-repository.yaml
   - mongo-helm-release.yaml
   - image-automation.yaml
+  - picture-route.yaml
+  - picture-destination-rule.yaml 
   - ./policy
   - ./registry
   - ./mouse-events

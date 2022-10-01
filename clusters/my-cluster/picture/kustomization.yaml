@@ -3,5 +3,3 @@ kind: Kustomization
 resources:
   - picture-deployment.yaml
   - picture-service.yaml 
-  - picture-route.yaml 
-  - picture-destination-rule.yaml 

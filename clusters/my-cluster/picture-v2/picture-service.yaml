@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: picture
+  name: picture-v2
   labels:
     app: picture-v2
 spec:

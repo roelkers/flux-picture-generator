@@ -8,5 +8,6 @@ resources:
   - ./registry
   - ./mouse-events
   - ./picture
+  - ./picture-v2
   - ./istio
   - ./istio-ingress

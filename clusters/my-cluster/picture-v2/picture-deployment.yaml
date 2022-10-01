@@ -1,22 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: picture
-  namespace: default
+  name: picture-v2
   labels:
-    app: picture
+    app: picture-v2
 spec:
   selector:
     matchLabels:
-      app: picture
+      app: picture-v2
   template:
     metadata:
       labels:
-        app: picture
+        app: picture-v2
     spec:
       containers:
       - name: picture
-        image: gcr.io/picture-generator/picture-service:1.0.5
+        image: gcr.io/picture-generator/picture-service:1.0.6 
         env:
         - name: DB_URL
           value: mongodb://picture:picturepw@mongodb-picture:27017/pictures

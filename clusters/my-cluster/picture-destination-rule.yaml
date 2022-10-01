@@ -4,7 +4,7 @@ metadata:
   name: picture-rule
   namespace: default
 spec:
-  host: picture.de 
+  host: picturee 
   trafficPolicy:
     loadBalancer:
       simple: RANDOM

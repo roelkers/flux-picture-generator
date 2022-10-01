@@ -3,7 +3,8 @@ kind: Kustomization
 resources:
   - ../picture
 commonLabels: 
-  app: picture-v2
+  app: picture
+  version: v1
 nameSuffix: -v2
 patchesStrategicMerge:
   - picture-deployment.yaml

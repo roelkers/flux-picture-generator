@@ -2,19 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: picture-v2
-  labels:
-    app: picture-v2
 spec:
-  selector:
-    matchLabels:
-      app: picture-v2
   template:
-    metadata:
-      labels:
-        app: picture-v2
     spec:
       containers:
-      - name: picture-v2
+      - name: picture
         image: gcr.io/picture-generator/picture-service:1.0.6 
         env:
         - name: DB_URL
@@ -23,6 +15,3 @@ spec:
           value: picture-generator
         ports:
         - containerPort: 3334
-      serviceAccountName: k8s-pubsub
-      nodeSelector:
-        iam.gke.io/gke-metadata-server-enabled: "true"

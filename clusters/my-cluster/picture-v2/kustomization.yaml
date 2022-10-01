@@ -5,3 +5,6 @@ resources:
 commonLabels: 
   app: picture-v2
 nameSuffix: -v2
+patchesStrategicMerge:
+  - picture-deployment.yaml
+

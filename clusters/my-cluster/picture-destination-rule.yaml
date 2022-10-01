@@ -1,17 +1,17 @@
-# apiVersion: networking.istio.io/v1alpha3
-# kind: DestinationRule
-# metadata:
-#   name: picture-rule
-#   namespace: default
-# spec:
-#   host: picture 
-#   trafficPolicy:
-#     loadBalancer:
-#       simple: RANDOM
-#   subsets:
-#   - name: v1
-#     labels:
-#       app: picture
-#   - name: v2
-#     labels:
-#       app: picture-v2
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: picture-rule
+  namespace: default
+spec:
+  host: picture 
+  trafficPolicy:
+    loadBalancer:
+      simple: RANDOM
+  subsets:
+  - name: v1
+    labels:
+      app: picture
+  - name: v2
+    labels:
+      app: picture-v2

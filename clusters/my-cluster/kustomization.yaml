@@ -3,19 +3,10 @@ kind: Kustomization
 resources:
   - bitnami-git-repository.yaml
   - mongo-helm-release.yaml
-  - picture-deployment.yaml
-  - picture-registry.yaml
-  - picture-policy.yaml
-  - picture-service.yaml 
-  - picture-route.yaml 
-  - mouse-events-deployment.yaml
-  - mouse-events-registry.yaml
-  - mouse-events-policy.yaml
-  - mouse-events-service.yaml 
   - image-automation.yaml
+  - ./policy
+  - ./registry
+  - ./mouse-events
+  - ./picture
   - ./istio
   - ./istio-ingress
-  - httpbin-service.yaml
-  - httpbin-deployment.yaml
-    #- httpbin-gateway.yaml
-
